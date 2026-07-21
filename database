@@ -1,0 +1,67 @@
+-- =====================================================
+-- TEGAS COMPANY VEHICLE BOOKING & MANAGEMENT SYSTEM
+-- Version 1.0
+-- Database Backup
+-- =====================================================
+
+CREATE DATABASE IF NOT EXISTS tegas_vms;
+USE tegas_vms;
+
+SET FOREIGN_KEY_CHECKS = 0;
+
+DROP TABLE IF EXISTS users;
+DROP TABLE IF EXISTS departments;
+
+SET FOREIGN_KEY_CHECKS = 1;
+
+-- ===================================
+-- DEPARTMENTS
+-- ===================================
+
+CREATE TABLE departments(
+
+department_id INT AUTO_INCREMENT PRIMARY KEY,
+
+department_name VARCHAR(100) NOT NULL UNIQUE,
+
+created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+
+);
+
+-- ===================================
+-- USERS
+-- ===================================
+
+CREATE TABLE users(
+
+user_id INT AUTO_INCREMENT PRIMARY KEY,
+
+staff_id VARCHAR(20) UNIQUE NOT NULL,
+
+full_name VARCHAR(100) NOT NULL,
+
+email VARCHAR(100) UNIQUE NOT NULL,
+
+phone VARCHAR(20),
+
+password VARCHAR(255) NOT NULL,
+
+role ENUM('Super Admin','Admin','Staff') NOT NULL,
+
+department_id INT NULL,
+
+profile_picture VARCHAR(255) DEFAULT 'default.png',
+
+status ENUM('Active','Inactive') DEFAULT 'Active',
+
+last_login DATETIME NULL,
+
+created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+
+FOREIGN KEY(department_id)
+
+REFERENCES departments(department_id)
+
+ON DELETE SET NULL
+
+);
