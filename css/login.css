@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:linear-gradient(
+        135deg,
+        #F8FBFF,
+        #EEF6FF,
+        #E5F1FF
+    );
+
+    overflow:hidden;
+
+}
+
+/* Background Bubble */
+
+.circle{
+
+    position:absolute;
+
+    border-radius:50%;
+
+    opacity:.5;
+
+    z-index:0;
+
+}
+
+.circle1{
+
+    width:350px;
+    height:350px;
+
+    background:#DDEEFF;
+
+    top:-120px;
+    left:-120px;
+
+}
+
+.circle2{
+
+    width:250px;
+    height:250px;
+
+    background:#EDE7FF;
+
+    bottom:-80px;
+    right:-80px;
+
+}
+
+.circle3{
+
+    width:170px;
+    height:170px;
+
+    background:#FFF4C7;
+
+    top:18%;
+    right:10%;
+
+}
+
+/* Login Card */
+
+.login-card{
+
+    position:relative;
+
+    z-index:2;
+
+    width:430px;
+
+    max-width:92%;
+
+    background:white;
+
+    border-radius:30px;
+
+    padding:45px;
+
+    box-shadow:0 18px 45px rgba(53,80,112,.10);
+
+}
+
+.logo{
+
+    width:150px;
+
+    display:block;
+
+    margin:auto;
+
+    margin-bottom:20px;
+
+}
+
+h2{
+
+    color:#355070;
+
+    text-align:center;
+
+    font-weight:700;
+
+    margin-bottom:5px;
+
+}
+
+.subtitle{
+
+    color:#7B8794;
+
+    text-align:center;
+
+    margin-bottom:30px;
+
+}
+
+.form-label{
+
+    color:#355070;
+
+    font-weight:500;
+
+}
+
+.input-group{
+
+    margin-bottom:20px;
+
+}
+
+.input-group-text{
+
+    background:#F7FBFF;
+
+    border:1px solid #D8ECFF;
+
+    border-radius:14px 0 0 14px;
+
+}
+
+.form-control{
+
+    height:52px;
+
+    border:1px solid #D8ECFF;
+
+    border-radius:0 14px 14px 0;
+
+}
+
+.form-control:focus{
+
+    border-color:#A9D6FF;
+
+    box-shadow:0 0 0 .2rem rgba(169,214,255,.25);
+
+}
+
+.btn-login{
+
+    width:100%;
+
+    height:54px;
+
+    border:none;
+
+    border-radius:15px;
+
+    background:#A9D6FF;
+
+    color:#355070;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.btn-login:hover{
+
+    background:#7DBBF8;
+
+    transform:translateY(-2px);
+
+}
+
+.footer{
+
+    text-align:center;
+
+    margin-top:25px;
+
+    color:#7B8794;
+
+    font-size:13px;
+
+}
+
+.version{
+
+    text-align:center;
+
+    color:#B0B0B0;
+
+    margin-top:8px;
+
+    font-size:11px;
+
+}
