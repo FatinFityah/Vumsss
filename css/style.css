@@ -1,0 +1,425 @@
+/* Clean TEGAS CSS */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #F7FAFC;
+    color: #355070;
+}
+
+.sidebar {
+    min-height: 100vh;
+    background: #D8ECFF;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, .08);
+}
+
+.logo {
+    padding: 25px;
+    text-align: center;
+    color: #355070;
+}
+
+.logo h3 {
+    font-weight: 700;
+}
+
+.sidebar a {
+    display: block;
+    margin: 8px;
+    padding: 14px 18px;
+    border-radius: 14px;
+    text-decoration: none;
+    color: #355070;
+    font-weight: 500;
+    transition: .25s;
+}
+
+.sidebar a:hover,
+.sidebar a.active {
+    background: #FFF4C7;
+    color: #355070;
+}
+
+.page-title {
+    font-size: 30px;
+    font-weight: 700;
+    color: #355070;
+}
+
+.subtitle {
+    color: #7B8794;
+}
+
+.card-box {
+    background: #fff;
+    border-radius: 22px;
+    padding: 24px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .08);
+}
+
+.stat-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 24px;
+    padding: 28px;
+    min-height: 220px;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, .08);
+    transition: .3s;
+    color: #355070;
+}
+
+.stat-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 35px rgba(0, 0, 0, .12);
+}
+
+.stat-card::after {
+    content: '';
+    position: absolute;
+    right: -45px;
+    top: -45px;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, .30);
+}
+
+.dashboard-icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 30px;
+    margin-bottom: 18px;
+}
+
+.stat-card h6 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.stat-card h1 {
+    font-size: 58px;
+    font-weight: 700;
+    margin: 12px 0 8px;
+}
+
+.stat-card small {
+    color: #5F6C7B;
+}
+
+.bg-soft-green {
+    background: #DDF8E8
+}
+
+.bg-soft-yellow {
+    background: #FFF8D6
+}
+
+.bg-soft-blue {
+    background: #DDEEFF
+}
+
+.bg-soft-purple {
+    background: #F2E7FF
+}
+
+.bg-soft-pink {
+    background: #FFE7EF
+}
+
+.icon-green {
+    background: #67D49A
+}
+
+.icon-yellow {
+    background: #FFC857
+}
+
+.icon-blue {
+    background: #68AEFF
+}
+
+.icon-purple {
+    background: #B48BFF
+}
+
+.icon-pink {
+    background: #FF95B4
+}
+
+.action-card,
+.quick-card {
+    display: block;
+    text-decoration: none;
+    background: #fff;
+    border-radius: 22px;
+    padding: 25px;
+    text-align: center;
+    color: #355070;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .08);
+    transition: .3s;
+    height: 100%;
+}
+
+.action-card:hover,
+.quick-card:hover {
+    transform: translateY(-6px);
+    background: #FFF9DF;
+    color: #355070;
+}
+
+.action-card i,
+.quick-card i {
+    font-size: 40px;
+    margin-bottom: 15px;
+    color: #6EA8FE;
+}
+
+.table {
+    background: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+thead {
+    background: #D8ECFF;
+}
+
+.btn-success {
+    background: #8FD8B5;
+    border: none;
+}
+
+.btn-primary {
+    background: #A9D6FF;
+    border: none;
+    color: #355070;
+}
+
+.btn-danger {
+    background: #FFB7C5;
+    border: none;
+}
+
+.form-control,
+.form-select {
+    border-radius: 14px;
+    padding: 12px;
+}
+
+.badge {
+    border-radius: 20px;
+    padding: 8px 12px;
+}
+
+@media(max-width:768px) {
+    .page-title {
+        font-size: 24px
+    }
+
+    .stat-card {
+        min-height: auto;
+        margin-bottom: 18px
+    }
+
+    .dashboard-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 26px
+    }
+
+    .stat-card h1 {
+        font-size: 42px
+    }
+}
+/* ===========================
+   Vehicle Card
+=========================== */
+
+.vehicle-card{
+
+    background:#fff;
+    border-radius:22px;
+    padding:25px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s;
+    height:100%;
+
+}
+
+.vehicle-card:hover{
+
+    transform:translateY(-6px);
+
+}
+
+.vehicle-header{
+
+    width:70px;
+    height:70px;
+    border-radius:20px;
+    background:#DDEEFF;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:#5A8DEE;
+    margin-bottom:20px;
+
+}
+
+.vehicle-card h4{
+
+    font-weight:700;
+
+}
+
+.vehicle-card p{
+
+    margin-bottom:8px;
+
+}
+.vehicle-photo{
+
+    width:100%;
+    height:180px;
+    object-fit:cover;
+    border-radius:18px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    margin-bottom:15px;
+
+}
+.vehicle-thumb{
+
+    width:70px;
+    height:50px;
+    object-fit:cover;
+    border-radius:10px;
+
+}
+
+.table thead{
+
+    background:#D8ECFF;
+
+}
+
+.table td{
+
+    vertical-align:middle;
+
+}
+.table td{
+
+    vertical-align:middle;
+
+}
+
+textarea{
+
+    resize:none;
+
+}
+
+.form-select{
+
+    min-width:170px;
+
+}
+
+.btn-success{
+
+    width:100%;
+
+}
+
+.table{
+
+    border-collapse:separate;
+    border-spacing:0 12px;
+
+}
+
+.table tbody tr{
+
+    background:#fff;
+
+}
+
+.table tbody td{
+
+    padding:18px;
+
+}
+.table{
+
+    width:100%;
+    table-layout:fixed;
+
+}
+
+.table th{
+
+    text-align:center;
+    vertical-align:middle;
+    font-weight:600;
+
+}
+
+.table td{
+
+    vertical-align:middle;
+    padding:18px 12px;
+
+}
+
+.table td:first-child{
+
+    text-align:left;
+
+}
+
+.table td:nth-child(2){
+
+    text-align:left;
+
+}
+
+.table td:nth-child(3),
+.table td:nth-child(4),
+.table td:nth-child(5),
+.table td:nth-child(6){
+
+    text-align:center;
+
+}
+
+.form-select{
+
+    width:100%;
+
+}
+
+textarea{
+
+    width:100%;
+    resize:none;
+
+}
+
+.btn-success{
+
+    width:100%;
+
+}
